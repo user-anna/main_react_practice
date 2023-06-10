@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Simpson} from "./components/Simpson/Simpson";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div>
+            <Simpson name={'Homer'} surname={'Simpson'} image={'https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'}/>
+            <Simpson name={'Marge'} surname={'Simpson'} image={'https://static.wikia.nocookie.net/adventures-of-chris-and-tifa/images/0/0c/Tapped_Out_Unlock_Marge.png'}/>
+            <Simpson name={'Bart'} surname={'Simpson'} image={'https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png'}/>
+            <Simpson name={'Lisa'} surname={'Simpson'} image={'https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png'}/>
+        </div>
+    );
+};
 
-export default App;
+export {App};
